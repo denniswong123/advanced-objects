@@ -1,0 +1,32 @@
+<html>
+<head>
+  <style>
+  div {
+    width: 400px;
+    height: 400px;
+    background-color: red;
+  }
+  </style>
+</head>
+<body>
+<div onmouseover = scratchMe()></div>
+<h1 id= "test"></h1>
+<script>
+/*
+Goal. To create a scratch-off game that will reveal a number when the mouse is dragged over a div box
+
+scratch off box = scratchCover
+number box = numberBox
+
+Step 1) Build div box that will fade when the mouse is dragged over it.
+*/
+
+var op = 1;
+function scratchMe() {
+op -= 0.1;
+//test to see if the op is decreasing
+document.getElementById('test').innerHTML = op;
+}
+</script>
+</body>
+</html>
